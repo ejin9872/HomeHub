@@ -1,0 +1,72 @@
+[
+  {
+    "id": "taste-of-home",
+    "title": "Taste of Home",
+    "url": "tasteofhome.com",
+    "enabled": true,
+    "estimatedPercent": 59
+  },
+  {
+    "id": "a-couple-cooks",
+    "title": "A Couple Cooks",
+    "url": "acouplecooks.com",
+    "enabled": true,
+    "estimatedPercent": 20
+  },
+  {
+    "id": "recipetineats",
+    "title": "RecipeTin Eats",
+    "url": "recipetineats.com",
+    "enabled": true,
+    "estimatedPercent": 5
+  },
+  {
+    "id": "tastes-better-from-scratch",
+    "title": "Tastes Better from Scratch",
+    "url": "tastesbetterfromscratch.com",
+    "enabled": true,
+    "estimatedPercent": 5
+  },
+  {
+    "id": "the-recipe-critic",
+    "title": "The Recipe Critic",
+    "url": "therecipecritic.com",
+    "enabled": true,
+    "estimatedPercent": 3
+  },
+  {
+    "id": "the-magical-slow-cooker",
+    "title": "The Magical Slow Cooker",
+    "url": "themagicalslowcooker.com",
+    "enabled": true,
+    "estimatedPercent": 2
+  },
+  {
+    "id": "sallys-baking-addiction",
+    "title": "Sally's Baking Addiction",
+    "url": "sallysbakingaddiction.com",
+    "enabled": true,
+    "estimatedPercent": 2
+  },
+  {
+    "id": "simple-veganista",
+    "title": "Simple Veganista",
+    "url": "simple-veganista.com",
+    "enabled": true,
+    "estimatedPercent": 2
+  },
+  {
+    "id": "nyt-cooking",
+    "title": "NYT Cooking",
+    "url": "cooking.nytimes.com",
+    "enabled": false,
+    "estimatedPercent": 1
+  },
+  {
+    "id": "mamas-on-a-budget",
+    "title": "Mamas on a Budget",
+    "url": "mamasonabudget.com",
+    "enabled": true,
+    "estimatedPercent": 1
+  }
+]

@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+homehub-491707-d1d7d0946503.json
+server/users.json
+server/fridges.json
 
 # Editor directories and files
 .vscode/*

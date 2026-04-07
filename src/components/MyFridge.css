@@ -1,0 +1,262 @@
+.fridge-form {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.fridge-inputs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.fridge-name-wrap {
+  flex: 1;
+  position: relative;
+}
+
+.fridge-name-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+  background: var(--color-bg);
+}
+
+.fridge-name-input:focus {
+  border-color: var(--color-secondary);
+}
+
+.fridge-suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--color-card);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  overflow: hidden;
+}
+
+.fridge-suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 12px;
+  background: none;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-bg);
+  transition: background 0.1s;
+}
+
+.fridge-suggestion:last-child {
+  border-bottom: none;
+}
+
+.fridge-suggestion:hover,
+.fridge-suggestion.highlighted {
+  background: #eef7f4;
+}
+
+.fridge-suggestion-name {
+  font-weight: 500;
+}
+
+.fridge-suggestion-cat {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.fridge-qty-input {
+  width: 70px;
+  padding: 10px 12px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+  background: var(--color-bg);
+  text-align: center;
+}
+
+.fridge-qty-input:focus {
+  border-color: var(--color-secondary);
+}
+
+.fridge-unit-select {
+  width: 90px;
+  padding: 10px 8px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  outline: none;
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23888'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 24px;
+}
+
+.fridge-unit-select:focus {
+  border-color: var(--color-secondary);
+}
+
+.fridge-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.fridge-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--color-bg);
+  border: 2px solid transparent;
+  font-size: 0.7rem;
+  color: var(--color-text-light);
+  transition: all 0.15s;
+}
+
+.fridge-cat:hover {
+  background: #eef7f4;
+}
+
+.fridge-cat.active {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  background: #eef7f4;
+}
+
+.fridge-cat-emoji {
+  font-size: 1.2rem;
+}
+
+.fridge-cat-label {
+  white-space: nowrap;
+}
+
+.fridge-add-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  background: var(--color-secondary);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.fridge-add-btn:hover {
+  opacity: 0.9;
+}
+
+.fridge-empty {
+  text-align: center;
+  padding: 48px 16px;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.fridge-group {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
+}
+
+.fridge-group-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.fridge-group-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fridge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--color-bg);
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.fridge-item-name {
+  font-weight: 500;
+}
+
+.fridge-item-qty {
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+}
+
+.fridge-item-delete {
+  background: none;
+  color: var(--color-text-light);
+  font-size: 0.75rem;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.fridge-item-delete:hover {
+  color: #dc2626;
+}
+
+.fridge-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4px;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.fridge-clear {
+  background: none;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.fridge-clear:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+  .fridge-inputs {
+    flex-wrap: wrap;
+  }
+  .fridge-name-wrap {
+    width: 100%;
+  }
+  .fridge-qty-input {
+    flex: 1;
+  }
+  .fridge-unit-select {
+    flex: 1;
+  }
+}

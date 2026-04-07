@@ -1,0 +1,365 @@
+.discover-search {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.discover-search-bar {
+  display: flex;
+  gap: 8px;
+}
+
+.discover-search-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+  background: var(--color-bg);
+}
+
+.discover-search-input:focus {
+  border-color: var(--color-primary);
+}
+
+.discover-search-btn {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  background: var(--color-primary);
+  color: white;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+}
+
+.discover-search-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.discover-search-btn:disabled {
+  opacity: 0.6;
+}
+
+.discover-fridge-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.discover-chips-label {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.discover-chip {
+  padding: 4px 10px;
+  border-radius: 16px;
+  background: #eef7f4;
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--color-secondary);
+  transition: all 0.15s;
+}
+
+.discover-chip:hover {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.discover-error {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.discover-loading,
+.discover-empty {
+  text-align: center;
+  padding: 48px 16px;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.discover-title {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.discover-card {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+
+.discover-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.discover-card-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.discover-card-name {
+  display: block;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.discover-card-saved {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Detail view */
+.discover-detail {
+  margin-bottom: 16px;
+}
+
+.discover-back {
+  background: none;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.discover-back:hover {
+  opacity: 0.7;
+}
+
+.discover-detail-card {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.discover-detail-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.discover-detail-info {
+  padding: 20px;
+}
+
+.discover-detail-info h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.discover-detail-info h3 {
+  font-size: 1rem;
+  margin: 20px 0 10px;
+  color: var(--color-text);
+}
+
+.discover-detail-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.discover-tag {
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: var(--color-bg);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.discover-detail-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.discover-save-btn,
+.discover-shop-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.discover-save-btn {
+  background: #fef2f2;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.discover-save-btn.saved {
+  background: var(--color-primary);
+  color: white;
+}
+
+.discover-shop-btn {
+  background: #edf4fb;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.discover-shop-btn:hover {
+  background: var(--color-blue);
+  color: white;
+}
+
+.discover-ingredients {
+  list-style: none;
+}
+
+.discover-ingredients li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.discover-ingredients li:last-child {
+  border-bottom: none;
+}
+
+.discover-ingredients li.in-fridge {
+  color: var(--color-text);
+}
+
+.discover-ingredients li.missing {
+  color: var(--color-text-light);
+}
+
+.discover-ing-status {
+  font-size: 0.75rem;
+}
+
+.discover-ing-name {
+  font-weight: 500;
+  flex: 1;
+}
+
+.discover-ing-measure {
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+}
+
+.discover-instructions {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.discover-instructions p {
+  margin-bottom: 8px;
+}
+
+.discover-source {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--color-blue);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Shopping list */
+.discover-shopping {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.discover-shopping-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.discover-shopping-header h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.discover-shopping-clear {
+  background: none;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.discover-shopping-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.discover-shopping-item:last-child {
+  border-bottom: none;
+}
+
+.discover-shopping-measure {
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.discover-shopping-remove {
+  background: none;
+  color: var(--color-text-light);
+  font-size: 0.75rem;
+  padding: 0 4px;
+}
+
+.discover-shopping-remove:hover {
+  color: #dc2626;
+}
+
+@media (max-width: 500px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .discover-detail-actions {
+    flex-direction: column;
+  }
+}
